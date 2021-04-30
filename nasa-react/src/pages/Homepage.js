@@ -21,9 +21,9 @@ console.log(`${process.env.REACT_APP_NASA_APOD_API_URL}`)
 
         return (
             <div>
-                <h2>{apodData.data.title}</h2>
+                {/* <h2>{apodData.data.title}</h2>
                 <img src={apodData.data.url}/>
-                <p>{apodData.data.explanation}</p>
+                <p>{apodData.data.explanation}</p> */}
     
             </div>
         )
