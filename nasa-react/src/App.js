@@ -41,10 +41,14 @@ function App() {
         <Homepage />
       </Route>
       <Route exact path="/profile">
-        <Profile />
+        <Profile user={user} setUser={setUser}/>
       </Route>
       <Route exact path="/login">
-        <Login />
+      {user ? 
+        <Redirect to="/profile" />
+        :
+          <Login user={user} setUser={setUser}/>
+        }
       </Route>
       <Route exact path="/signup">
         <Signup user={user} setUser={setUser}/>
